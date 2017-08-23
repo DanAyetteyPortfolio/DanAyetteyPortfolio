@@ -1,0 +1,431 @@
+body{
+
+    background-color: floralwhite;
+
+    font-size: 1.0em;
+    padding: inherit;
+    margin: inherit;
+
+
+}
+
+div.backgroundImage{
+
+    background : url("restaurant_icons.png") repeat;
+    padding-bottom: 1400px;
+
+
+}
+
+
+.ranger{
+    float: left;
+    padding-left:203px ;
+    font-size: 1.3em;
+}
+
+.lit{
+    float: left;
+    font-size: 1.3em;
+
+
+}
+
+.show{
+    float: right;
+    font-size: 4em;
+    font-weight: bold;
+    color: snow;
+    padding-right:60px ;
+    padding-bottom:14px ;
+
+}
+.peepTalk{
+    float: left;
+    width: 300px;
+    padding-left:30px ;
+    padding-right:29px ;
+    padding-bottom: 10px;
+
+
+
+}
+
+
+.topSpan{
+
+
+    background-color: mediumaquamarine;
+
+
+}
+
+.logo{
+
+    width: 50px;
+    height: 50px;
+    padding-top:5px ;
+    padding-left: 80px;
+    float: left;
+
+}
+
+.companyName{
+    color: gray;
+    font-family: "Sitka Banner";
+    text-align: center;
+    padding-top:35px ;
+    padding-right: 100px;
+    float: left;
+
+
+
+}
+
+.dir{
+    text-indent: 41px ;
+
+
+}
+
+ul.navigate{
+    list-style-type: none;
+    width: 100%;
+    margin: auto;
+    padding: 0px ;
+    overflow: hidden;
+    background-color: #333;
+
+
+}
+
+li a{
+    float: left;
+}
+
+
+
+.save_li a{
+
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: "Sitka Banner" ;
+    text-align: center;
+    padding: 22px 22px;
+
+
+
+
+
+
+}
+
+li a:hover{
+    background-color: gold;
+
+}
+a.active{
+    background-color: crimson;
+}
+
+.backgroundImage{
+
+}
+
+
+
+
+.polaroid{
+    width:35%;
+    height: 300px;
+    background-color:white ;
+    padding-right: 0px;
+    float: left;
+
+    box-shadow: 0 2px 4px 0  rgba(0,0,0,1.2), 0 6px 12px 0  rgba(0,0,0,1.2)  ;
+}
+.photo{
+    width: 100%;
+    height: 200px;
+
+}
+.caption{
+    text-align:center;
+    padding-top: 40px;
+}
+.history{
+    width: 60%;
+    padding-right: 10px;
+    height: 300px;
+    float: left;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5),0 2px 4px 0 rgba(0,0,0,0.5);
+}
+.txt{
+    padding-top: 20px;
+    white-space: inherit;
+    text-align: center;
+}
+
+.ing{
+    width:200px ;
+}
+
+
+.left{
+    float: inherit;
+    padding-left: 30px;
+    font-size: 1.3em;
+}
+.facts{
+
+    float: inherit;
+    padding-left: 120px;
+
+    list-style: disc;
+
+}
+
+
+.cake{
+    width:100%;
+    height: 200px;
+
+
+}
+.cake2{
+
+    width: 30%;
+    height: 200px;
+    float: right;
+    background-color: white;
+    box-shadow: 2px 4px 2px 2px rgba(0,0,0,0.4),2px 2px 2px 2px rgba(0,0,0,0.4);
+
+
+}
+
+.cake3{
+    float: left;
+    width: 100%;
+    height: 700px;
+
+
+}
+.tail{
+
+    background-color: white;
+    padding-bottom:50px ;
+
+
+
+}
+
+.tail1{
+
+    background-color: white;
+
+    float: left;
+
+
+
+}
+
+.rating{
+    float: inherit;
+}
+
+.rating ul {
+    background: url('star_empty.png')repeat-x;
+}
+
+.rating a:hover {
+    background: url('star_full.png') repeat-x;
+}
+
+/*.rating a:active,
+.rating a:focus
+ {
+    background: url('star_highlight.png') ;
+}
+*/
+
+.rating ul {
+    position: relative;
+    width: 151px; /*5 times the width of your star*/
+    height: 28px; /*height of your star*/
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-position: left top;
+}
+
+.rating li {
+    display: inline;
+}
+
+.rating a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: -1000em;
+    height: 36px; /*height of your star*/
+    line-height: 36px; /*height of your star*/
+    outline: none;
+    overflow: hidden;
+    border: none;
+}
+.rating{
+    float: left;
+    padding-left: 20px;
+}
+
+.rating a.one-star {
+    width: 20%;
+    z-index: 6;
+}
+
+.rating a.two-stars {
+    width: 40%;
+    z-index: 5;
+}
+
+.rating a.three-stars {
+    width: 60%;
+    z-index: 4;
+}
+
+.rating a.four-stars {
+    width: 80%;
+    z-index: 3;
+}
+
+.rating a.five-stars {
+    width: 100%;
+    z-index: 2;
+}
+
+.rating a.current {
+    z-index: 1;
+}
+.ranger{
+    float: left;
+    padding-left:203px ;
+    font-size: 1.3em;
+}
+
+.lit{
+    float: left;
+    font-size: 1.3em;
+
+
+}
+
+.show{
+    float: right;
+    font-size: 4em;
+    font-weight: bold;
+    color: snow;
+    padding-right:60px ;
+    padding-bottom:14px ;
+
+}
+.peepTalk{
+    float: left;
+    width: 300px;
+    padding-left:30px ;
+    padding-right:29px ;
+    padding-bottom: 10px;
+
+
+
+}
+
+.chapter{
+    float: left;
+
+}
+.left{
+    float: left;
+    padding-left: 30px;
+    font-size: 1.3em;
+}
+
+.facts{
+
+    float: inherit;
+    padding-left: 280px;
+    list-style: disc;
+
+}
+
+.dir{
+    text-indent: 41px ;
+
+
+}
+h1 {
+    text-align: center;
+    width: 400px;
+    margin: 20px auto;
+}
+p.title{
+    text-indent: 29px;
+    color: darksalmon;
+
+
+
+}
+p.title2{
+    text-indent: 29px;
+    color: darksalmon;
+
+
+
+
+
+}
+
+p.art1{
+
+    font-size: 1.4em;
+    padding-top: 10px;
+    padding-left: 7px;
+    text-align: left;
+
+    width: 98%;
+}
+p.art2{
+    font-size: 1.4em;
+    padding-top: 10px;
+    padding-left: 7px;
+    text-align: left;
+    width: 98%;
+
+}
+
+.art1Shadow{
+    padding-bottom: 30px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5),0 1px 1px 0 rgba(0,0,0,0.5);
+}
+
+.art1Shadow1{
+
+    padding-bottom: 100px;
+    padding-right: 20px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5),0 1px 1px 0 rgba(0,0,0,0.5);
+}
+
+.foot{
+    padding: 20px;
+    background-color: crimson;
+    border-top:solid ;
+    border-top-color: skyblue;
+
+}
+
+p.footLabel{
+    text-align: center;
+    color: white;
+}

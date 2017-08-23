@@ -1,0 +1,150 @@
+
+body {
+  overflow: scroll;
+  background-image: url("https://handmadebybutton.files.wordpress.com/2011/10/screen-shot-2011-10-09-at-11-22-49.png");
+  background-size: 100%;
+}
+
+.header {
+  display: inline-block;
+  background-color: #cce0ff;
+  width: 90%;
+  border: 1px;
+  border-radius: 6%;
+  margin-left: 40px;
+  margin-top: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  opacity: 0.8;
+}
+
+.header > img{
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-left: 15px;
+}
+
+.header > h3{
+  font-size: 25px;
+  font-family: Helvetica;
+  font-variant:small-caps;
+  color: #003cb3;
+  float: right;
+  margin-right: 15px;
+}
+
+.pie, .cupcake, .carrotcake, .kalitsounia{
+  display: inline-block;
+  width: 30%;
+  height: 50%;
+  background-color: #ffe6e6;
+  box-shadow: 3px 3px 3px #999;
+  margin-bottom: 25px;
+  margin-left: 99px;
+  padding-left: 10px;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.pie{
+  padding-top: 30px;
+}
+
+.cupcake, .kalitsounia{
+	margin-left: 150px; 
+}
+
+.kalitsounia > a > img{
+  width: 90%;
+  height: 326px;
+  padding-left: 17px;
+}
+
+.pie > a > img {
+	width: 80%;
+	position: center;
+	padding-left: 34px;
+}
+
+.cupcake > a > img {
+   height: 303px;
+   width: 90%;
+   position: center;
+   padding-left: 18px;
+   padding-right: 20px;
+   margin-right: 50px;
+}
+
+.carrotcake > a > img {
+	width: 90%;
+	height: 310px;
+  position: center;
+  padding-left: 18px;
+  padding-right: 20px;
+  margin-right: 50px;
+}
+
+@keyframes wiggle {
+  0% {transform:rotate(4deg);}
+  50% {transform:rotate(-4deg);}
+  100% {transform:rotate(4deg);}
+}
+ 
+img:hover {
+	border-radius: 50%;
+  -webkit-animation: wiggle 0.5s infinite;
+  -moz-animation: wiggle 0.5s infinite;
+  animation: wiggle 0.7s infinite;
+}
+
+.img-describtion, .img-describtion1, .img-describtion2, .img-describtion3 {
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 20px;
+	color: #804000;	
+}
+
+#info, #info1, #info2, #info3 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: lighter;
+  font-family: Arial;
+  color: #cc6600;
+}
+
+.footer {
+  display: inline-block;
+  background-color: #cce0ff;
+  width: 90%;
+  border: 1px;
+  border-radius: 6%;
+  margin-left: 40px;
+  margin-top: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  opacity: 0.8;
+  clear: both;
+  text-align: center;
+  word-spacing: 10px; 
+}
+
+h4 {
+  display: inline-block;
+  font-weight: bold;
+  font-family: Arial;
+  font-variant: small-caps;
+  font-style: underline;
+  color:  #003cb3;
+  text-align: center;
+
+}
+a{
+  color: brown;
+}
+
+a:hover{
+  color: red;
+  font-size: 20px;
+  text-decoration: none;
+}

@@ -1,0 +1,273 @@
+ body {
+  background-image: url("http://static1.squarespace.com/static/5266b504e4b0547c6f2862be/t/54ee0009e4b0d577cb6e9838/1424883725336/Fine+Art+Film+Photographer+-+Baking+-+Linzer+Cookies");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: 89em;
+    
+}
+
+.header {
+  font-size: 1.5em;
+  color: #ff3300;
+  font-family: Helvetica; 
+  text-align: left;
+  padding: 1em;
+  padding-top: 1em;
+  padding-right: 2em;
+  margin-top: -1.3em;
+  opacity: .5;
+
+}
+
+#info {
+  font-size: 1.2em;
+  color: #4d004d;
+  font-family: Helvetica;
+  text-indent: 1.5em;
+  margin-right: 6em;
+  margin-top:  -1.7em;
+  padding-left: 1em;
+  line-height: 1.4;
+
+}
+
+span {
+  font-size: 1.2em;
+  
+  
+}
+
+img {
+  width: 26em;
+  height: 20em;
+  margin-left: 5em;
+
+
+}
+
+.blueberry{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/564x/0b/2c/38/0b2c384b0e930824887f799fe842c836.jpg");
+   }
+
+.header2{
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1em;
+  border-radius:4%;
+  width: 90%;
+  border-color: #ffccff;
+  opacity: 0.8;
+  margin-top: 2em;
+  margin-left: 3em;
+  box-shadow: 0.5em 0.5em #ffb3b3; 
+
+
+ }
+
+ .header2 > #head1 {
+    float: left;
+    font-size: 2.2em;
+    font-variant: small-caps;
+    color:  #ff1a1a;
+    margin-left: 2em;
+
+ }
+
+ .header2 > a{
+   text-decoration: none;
+   font-style: oblique;
+   font-weight: bold;
+   font-size: 1em;
+   color: #ff1a1a;
+   float: right;
+   margin-top: 2em;
+   margin-right: 2.5em;
+ }
+
+ .header2 > a:hover{
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1em;
+  color: #b30077;
+ }
+
+ .prep_info{
+  display:block;
+  border-radius: 3em;
+  background-color: #ffffff;
+  opacity: 0.8;
+  margin-left: 4em;
+  margin-top: 2em;
+  margin-bottom: -0.6em;
+  text-align: center;
+  width: 25%;
+  padding: 0.4em;
+
+ }
+ 
+ #time, .portion{
+  font-family: Helvetica;
+  font-size: 1em;
+  font-weight: bold;
+  color: #009966;
+ }
+
+
+ .ingredients{
+  float: left;
+  text-align: left;
+  border-radius: 3em;
+  opacity: 0.7;
+  background-color: #ffffff;
+  border: 1em;
+  margin-left: 2em;
+  margin-top: 4.3em;
+  height: 55em;
+  width: 35%;
+ }
+
+ .ingredients > img {
+  float: top;
+  margin-left: 3em;
+  width: 20em;
+  height: 20em;
+  border-radius: 60%;
+  border: 0.5em dotted lightpink;
+ }
+
+ .ingredients > h2 {
+  text-align: center;
+  color:  #ff1a1a;
+  font-weight: bolder;
+  font-size:1.5em;
+
+ }
+
+.ingredients > ul > li{
+  margin-right: 4em;
+  margin-left: 1.5em;
+  margin-top: 1.5em;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: #80002a;
+
+ }
+
+#star > button{
+    display: inline-block;
+    font-size: 2em;
+    color: red;
+    float: center;
+    padding-right: -1em;
+    padding-left: -1em;
+    margin-right: 0.5em;
+    margin-left: 2em;
+    border-radius: 100%;
+    background-color: #f0f0f5;
+    opacity: 0.8;
+ }
+
+ #star:hover > button:before {
+  content: '\2605';
+  position: absolute;
+ }
+
+
+#star > button:hover ~ button:before {
+  content:'';
+}
+
+
+#choose{
+  font-variant: small-caps;
+  color: purple;
+  font-family: Helvetica;
+  text-align: center;
+  margin-left: 9em;
+  font-size: 0.8em;
+  float:left;
+  font-weight: bold;
+  padding-top: -8em;
+}
+
+.baking {
+  float: right;
+  text-align: left;
+  border-radius: 3em;
+  opacity: 0.7;
+  background-color: #ffffff;
+  border: 1em;
+  margin-right: 6em;
+  margin-top: 1em;
+  height: 58em;
+  width: 50%;
+
+}
+
+.baking > h2 {
+  text-align: center;
+  color: #ff1a1a;
+  font-weight: bolder;
+  font-size:1.5em;  
+}
+
+.baking > h3 {
+  margin-left: 1.2em;
+  padding-right: 1em; 
+  color: #009966; 
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.baking > ul > li {
+  margin-right: 4em;
+  margin-left: 1.5em;
+  margin-top: 1.5em;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: #80002a;
+}
+
+.footer {
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1em;
+  border-radius:4%;
+  width: 90%;
+  border-color: #ffccff;
+  opacity: 0.8;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 3em;
+  box-shadow: 0.5em 0.5em #ffb3b3; 
+  clear: both;
+}
+
+ #credit {
+    float: left;
+    font-size: 1.2em;
+    font-variant: small-caps;
+    color: #ff1a1a;
+    margin-left: 2em;
+}
+
+#credit2 {
+    float: right;
+    font-size: 1.2em;
+    font-variant: small-caps;
+    color: #ff1a1a;
+    margin-right: 2em;
+}
+
+.footer > a {
+  text-decoration: none;
+
+}
