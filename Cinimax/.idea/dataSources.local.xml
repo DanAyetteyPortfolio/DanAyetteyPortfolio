@@ -2,10 +2,14 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="Cinimax" uuid="f0ddac43-7ce0-4a76-9e3b-525a779b7672">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="MySQL" version="5.7.19-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <secret-storage>master_key</secret-storage>
-      <first-sync>true</first-sync>
       <user-name>root</user-name>
+      <introspection-schemas>*:cinimax,information_schema</introspection-schemas>
     </data-source>
   </component>
 </project>

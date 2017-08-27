@@ -10,7 +10,7 @@
 <head>
 
 
-    <link  rel="stylesheet" type="text/css"  href="JPages/pageCss/cenemaCss.css"/>
+    <link  rel="stylesheet" type="text/css"  href="JPages/pageCss/cinimaxCss.css"/>
     <link  rel="stylesheet" type="text/css" href="JPages/pageCss/barCss.css"/>
     <script type="javascript" src="JPages/jquery/jquery-3.1.1.min.js"/>
 
@@ -25,21 +25,22 @@
 
 <f:view>
 
-  <ui:include src="bar.xhtml"/>
 
-    <hr class="line_1"/>
+      <ui:include src="bar.xhtml"/>
 
-    <div class="signIn">
-        <ui:include src="login.xhtml"/>
+        <hr id=" classne_1"/>
 
-    </div>
-      <div id="hideAndshowLater">
-        <ui:include  src="signUp.xhtml"/>
-       <ui:include src="socialActivitiesAndMore.xhtml"/>
-    </div>
+        <div class="signIn">
+            <ui:include src="login.xhtml"/>
 
-    <!--  <ui:include src="movies.xhtml"/>-->
-    <ui:include src="footer.xhtml"/>
+        </div>
+          <div id="hideAndshowLater">
+            <ui:include  src="signUp.xhtml"/>
+           <ui:include src="socialActivitiesAndMore.xhtml"/>
+        </div>
+
+    <ui:include src="movies.xhtml"/>
+  <ui:include src="footer.xhtml"/>
 </f:view>
 </body>
 </html>

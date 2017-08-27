@@ -10,12 +10,44 @@ import java.sql.*;
 
 @ManagedBean(name = "login" ,eager = true)
 @RequestScoped
-public class Login {
+public class Login{
 
 
 
     private String emailAndPhone;
     private String secretPassword;
+    private String fullName;
+    private String dateOfBirth;
+    private String email;
+    private String street;
+    private String state;
+    private String country;
+    private String postCode;
+    private String streetNumber;
+
+
+
+    public String getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+   // public void setFullName(String fullName) {
+    //    this.fullName = fullName;
+   // }
+
+
 
     public void setEmailAndPhone(String emailAndPhone) {
         this.emailAndPhone = emailAndPhone;
@@ -45,6 +77,8 @@ public class Login {
 
             Connection connection=null;
             PreparedStatement statement=null;
+            emailAndPhone="danni.ayette@gmail.com";
+            secretPassword="mother30";
 
          if(!emailAndPhone.equals("")){
 
@@ -52,20 +86,23 @@ public class Login {
                 Class.forName("com.mysql.jdbc.Driver");
 
                 System.out.println("Connecting.....");
-                connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/panocinimaclientdatabase", "root", "0000");
-                String sql="SELECT*FROM clientaccountDatabase";
+                connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/Cinimax", "root", "0000");
+                String sql="SELECT*FROM kunder";
                 statement=connection.prepareStatement(sql);
 
 
                 ResultSet result=statement.executeQuery();
+
                 while (result.next()){
 
                     final String phoneAndEmail=getEmailAndPhone();
                     final String ID=getSecretPassword();
 
-                    if(phoneAndEmail.equals(result.getString("EmailAndPhone")) && ID.equals(result.getString("SecretPassword"))){
+                    if(phoneAndEmail.equals(result.getString("email")) && ID.equals(result.getString("password"))){
+                        setFullName(result.getString("fistName") );
                        return "clientAccount";
                     }else{
+
                         return "invalid";
                     }
 
@@ -88,7 +125,12 @@ public class Login {
 
 
     public static void main(String [] arg){
-        new Login();
+
+       Login login= new Login();
+       login.login();
+       System.out.println(login.getFullName());
+
+
 
     }
 

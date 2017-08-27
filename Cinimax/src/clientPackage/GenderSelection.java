@@ -9,7 +9,7 @@ import javax.faces.bean.RequestScoped;
 
 @ManagedBean(name = "gender" ,eager = true)
 @RequestScoped
-public class GenderSelection {
+public class  GenderSelection {
 
     public String gender[]=new String[2];
 

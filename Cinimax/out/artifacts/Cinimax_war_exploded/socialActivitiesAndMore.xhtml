@@ -6,24 +6,24 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <head>
-    <link rel="stylesheet" href="JPages/pageCss/cenemaCss.css"/>
+    <link rel="stylesheet" href="JPages/pageCss/cinimaxCss.css"/>
     <title>Panocinima Home</title>
 
 </head>
 
 
 
-<script type="text/javascript"  src="JPages/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript"  src="JPages/jquery/jquery-3.1.1.min.js"/>
 <h:outputScript type="text/javascript">
 
     $(document).ready(function () {
         $("#activity_2").hide();
         $("#activity_3").hide();
         $("#activity_1").hide();
-        $("backImage").hide();
 
-        $("#player").hide();
-        $("backImage").hide();
+        $(".player").hide();
+        $(".use").hide();
+        $(".videos").hide();
 
 
         $("#watchMore").click(function () {
@@ -39,10 +39,10 @@
         })
 
         $("#play").click(function () {
-            $("backImage").hide();
-            $("#player").slideToggle();
-            $("#use").slideToggle();
-            $("#videos").slideToggle();
+            $("#backImage").hide();
+            $(".player").show();
+            $(".use").show();
+            $(".videos").show();
 
 
         })

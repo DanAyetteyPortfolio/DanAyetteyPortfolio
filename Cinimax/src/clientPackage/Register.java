@@ -159,20 +159,24 @@ public class Register{
                     Connection con = null;
 
                     Class.forName("com.mysql.jdbc.Driver");
-                    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/panocinimaclientdatabase", "root", "0000");
-                    String sql = "INSERT INTO clientaccountdatabase(FirstName, Surname, EmailAndPhone, SecretPassword, ReenterSecretPassword, DateOfBirth, Gender) VALUES(?,?,?,?,?,?,?)";
+                    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Cinimax", "root", "0000");
+                    String sql = "INSERT INTO kunder(id,fistName, lastName, email, password, reenterPassword, dateOfBirth, gender) VALUES(?,?,?,?,?,?,?,?)";
                     ps = con.prepareStatement(sql);
                     dateOfBirth=getDay()+"/"+getMonth()+"/"+getYear();
-                    ps.setString(1, getFirstName());
-                    ps.setString(2, getSurname());
-                    ps.setString(3, getEmailOrMobileNumber());
-                    ps.setString(4, getSecretID());
-                    ps.setString(5, getReenterSecretID());
-                    ps.setString(6, getDateOfBirth());
-                    ps.setString(7, getFemale());
+
+                    String birthDateAsAnId=getDay()+getMonth()+getYear();
+                    ps.setString(1,birthDateAsAnId);
+                    ps.setString(2, getFirstName());
+                    ps.setString(3, getSurname());
+                    ps.setString(4, getEmailOrMobileNumber());
+                    ps.setString(5, getSecretID());
+                    ps.setString(6, getReenterSecretID());
+                    ps.setString(7, getDateOfBirth());
+                    ps.setString(8, getFemale());
 
 
-                    count=ps.executeUpdate();
+
+                   count=ps.executeUpdate();
 
 
                     System.out.println("Successful");
